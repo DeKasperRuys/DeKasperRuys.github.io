@@ -1,0 +1,125 @@
+<section id="cv">
+    <div class="container">
+        <h2><strong>Curriculum Vitae</strong></h2>
+        <span class="bar-title mb-5"></span>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Education</strong></h4>
+
+                <ul class="timeline">
+                    <li>
+                        <h5><strong>Informatics Secondary (TSO) </strong> </h5>
+                        <em class="font-italic">Informatica beheer<br> Sint-Lodewijk</em>
+                        <p class="year p-2 d-flex justify-content-center">2014 - 2016</p>
+                    </li>
+                    <li>
+                        <h5>Bachelor Elektronica-ICT</h5>
+                        <em class="font-italic">Elektronica-ICT<br> Artesis Plantijn University College of Antwerp, Be</em>
+                        <p class="year p-2 d-flex justify-content-center">2017-2021</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4><strong>Experience</strong></h4>
+                <ul class="timeline">
+                    <li>
+                        <h5>IT Manager support</h5>
+                        <em>Solid Networks, Be</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2016</p>
+                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <p *ngIf="freelanceScotfyIsShown">
+
+                            <strong>Tasks:</strong> Solid Networks offered an outside IT department for smaller companies. As an intern I helped with the setup and the installation of devices in multiple companies across Belgium. As well as helping with support.<br>
+                            
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Working student IT department</h5>
+                        <em>Assuralia, Brussel, Be</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2019</p>
+                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <p *ngIf="freelanceIsShown">
+                            <strong>Tasks: </strong> As a working student I helped where needed in the IT department. Wiping harddisks, Cable management, Replacing devices and setting up Raspberry pi's that show meeting times on screens. <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h5>European Project Semester</h5>
+                        <em>MakeKit, Oslo, No</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2021</p>
+                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <p *ngIf="alternanceIsShown">
+                            <strong>Tasks: </strong> Work with an international group on a project for the company MakeKit. See portfolio EPS MakeKit project<br>
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Your opportunity</h5>
+                        <em>TBD</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2022-...</p>
+                            
+                        </div>
+                        
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="container row">
+                    <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Languages</strong></h4>
+                        <div>
+                            <span class=""><img src="assets/images/Belgium-Flag.png" width="20"
+                                    alt="drapeau de la france"><strong> Nederlands </strong> <i class="val"> Native</i></span>
+                        </div>
+
+                        <div>
+                            <span class=""><img src="assets/images/united-kingdom-flag.png" width="20"
+                                    alt="drapeau du royaume uni"><strong> English </strong> <i class="val"> Fluent</i></span>
+                        </div>
+                        <div>
+                            <span class=""><img src="assets/images/france-flag.png" width="20"
+                                    alt="drapeau du royaume uni"><strong> Français </strong> <i class="val"> Beginner (long time since last spoken)</i></span>
+                        </div>
+                
+
+                    </div>
+                </div>
+                <div class="container row">
+                    <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <h4><strong>Interests</strong></h4>
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="skiingIcon"></fa-icon><strong> Sport</strong> <i class="val"> Ski, Hiking, Cycling, Football, ..</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="planeIcon"></fa-icon><strong> Countries</strong> <i class="val">
+                                    Belgium, Netherlands, Germany, Denmark, Sweden, Norway(Exchange student A1 Norwegian), ABROAD</i>
+                            </span>
+                        </div>
+
+                        <div class="noProgress langue">
+                            <span>
+                                <fa-icon [icon]="gameIcon"></fa-icon><strong> (Board) Games </strong> <i class="val">
+                                    MOBA, MMO, FPS, Strategy</i>
+                            </span>
+                        </div>
+                        <a href="https://github.com/DeKasperRuys/CV" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">CV link</a> 
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>

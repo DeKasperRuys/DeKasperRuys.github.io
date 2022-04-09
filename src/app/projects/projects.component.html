@@ -1,0 +1,270 @@
+<section id="portfolio">
+    <div class="container">
+        <h2><strong>Portfolio</strong></h2>
+        <div class="row">
+            <h5><strong>These are projects I have worked on for my studies and in my private time for fun.</strong></h5>
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="MakeKit-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/MakeKit.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MakeKit</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Android Studio, Git, CATIA (Design), Micro:bit</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/3DGame" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a>
+                            <a href="https://github.com/DeKasperRuys/MakeKit-Report/blob/main/EPS_-_Group_3_-_Create_a_programmable_electromechanical_DIY_toy_kit.pdf" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Report</a> 
+                            <button (click)="detailOnClick('MakeKit')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="MakeKitIsShown" class="mt-3">
+                            <p>A semester project abroad for the company MakeKit. Here we designed a modular DIY robot to do robot battles. From building the robot to coding the movement and attacks on the micro:bit with MakeCode.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="CityHunt-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/CityHunt.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>CityHunt</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Unity, Visual Studio, Firebase, Angular, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/CityHunt-Copy" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <a href="https://youtu.be/fZyz1TRXFGU" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Video</a> 
+                            <button (click)="detailOnClick('CityHunt')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="CityHuntIsShown" class="mt-3">
+                            <p>City game created in Unity using Mapbox where you have to explore specific points of interest and answer quiz-like questions. Communication was with a self build REST API and a website created in Angular to create the quizes with coordinates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id=" MedicalTracker-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/MedicalTracker.jpg)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MedicalTracker</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Android Studio, Arduino, LoRaWAN, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/MedicalTracker-Copy" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a>
+                            <button (click)="detailOnClick('MedicalTracker')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf=" MedicalTrackerIsShown" class="mt-3">
+                            <p>A medical tracking device for African hospitals that measures the environment for humidity, temperature and shocks. Which will warn the doctor if the medicine has been damaged so he can order new ones asap. It will also notify the driver about the package requirements to not be damaged.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="BloodMoon-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/BloodMoon.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Red Moon</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Visual studio, Monogame, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/RedMoon" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('BloodMoon')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="BloodMoonIsShown" class="mt-3">
+                            <p>2D game created in visual studio Monogame in C#. Needing to create scripts for collision, movement and gameplay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="Eternal-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/Eternal.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <h3>Eternal</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Unity, Git</p>
+                        
+                        <div class="d-flex flex-row justify-content-center">
+                             
+                            <a href="https://github.com/DeKasperRuys/3DGame" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <a href="https://www.youtube.com/watch?v=__cocrUn2GE" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Video</a>
+                            <button (click)="detailOnClick('Eternal')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+
+                        <div *ngIf="EternalIsShown" class="mt-3">
+                            <p>A 3d game created in Unity. Using and exploring all sorts of Unity features. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="VR-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/VR.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Drug abuse VR Experience</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Unity, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/ThibautHumblet/VRExperience" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('VR')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="VRIsShown" class="mt-3">
+                            <p>A Virtual Reality experience of the effects of drug abuse. With options like Alcohol and LSD. The player has the choice of which drug to take and how much with different outcomes depending on the choices made. This was a multidisciplinary project, collaborating with journalist for story telling and nurse for drug effect realism.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+
+
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id=" Sparky-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/SparkyManual.png)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Sparky</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Angular, Git, Raspberry pi, Product Design</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/Sparky-Copy" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a>
+                            <a href="https://sparky.exotec.be/" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Website</a> 
+                            <button (click)="detailOnClick('Sparky')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf=" SparkyIsShown" class="mt-3">
+                            <p>Sparky is a start-up focussing on keeping mobile devices charged. We rent out high quality powerbanks with the help of our charging stations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="CloudAPI-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/CloudAPI.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>LeagueOfLegendsAPI</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>REST .NET API, Git, Angular</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/LoLAPI-Copy" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a>
+                            <button (click)="detailOnClick('CloudAPI')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="CloudAPIIsShown" class="mt-3">
+                            <p>A project where I created a JSON:REST API. Creating controller with all HTTP Methods and JWT protection using ASP.NET.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            
+
+
+
+
+          
+
+
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="SS-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/SS.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Smart System: AutoDraw Robot</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Arduino, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/AutoDrawRobot-Copy" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('SS')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="SSIsShown" class="mt-3">
+                            <p>A robot using sensors to move by itself in a square field or self controlled by bluetooth. The idea was to import a drawing so that the robot can recreate it in the square field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header d-flex flex-column " style="height: 300px;width: 100%; ">
+                        <div id="MeDraw-img" class="img-wrap" style="height: 300px;width: 100%;  "
+                            [ngStyle]="{backgroundImage:'url(assets/images/MeDraw.PNG)'}">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MeDraw</h3>
+                        <h5><strong>Technologies:</strong> </h5>
+                        <p>Android Studio, Git</p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/DeKasperRuys/MeDraw" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('MeDraw')" type="button" class="btn btn-primary">Details</button>
+                        </div>
+                        <div *ngIf="MeDrawIsShown" class="mt-3">
+                            <p>An International project where we made a mobile app for construction workers that need metal sheets in a specific shape. On the app you could draw the shape you wanted and add the measurement by using a Bosch professional glm 50 c device, which sends the values over bluetooth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
